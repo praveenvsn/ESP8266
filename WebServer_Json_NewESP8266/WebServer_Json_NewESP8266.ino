@@ -20,8 +20,8 @@ int LED_PIN = 2;
 aREST rest = aREST();
 
 // WiFi parameters
-const char* ssid = "Virus"; //This is case sensitive. Be careful.
-const char* password = "pr@veen123";
+const char* ssid = "linksys"; //This is case sensitive. Be careful.
+const char* password = "n@gesh02";
 
 // The port to listen for incoming TCP connections 
 #define LISTEN_PORT           80
@@ -31,6 +31,7 @@ WiFiServer server(LISTEN_PORT);
 
 void setup(void)
 {  
+  digitalWrite(LED_PIN,OUTPUT);
   // Start Serial
   Serial.begin(115200);
   
